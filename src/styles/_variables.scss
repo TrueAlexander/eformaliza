@@ -1,0 +1,22 @@
+//variables
+
+//colors static
+$colorBlack: #000;
+$colorLightGrey: #cccccc;
+$colorDarkRed: #ce4809;
+$colorGrey: #808080;
+$colorGreyTransp: rgba(128, 128, 128, 0.61);
+$colorDarkRed05: rgba(206, 71, 9, 0.05);
+
+//colors dynamic
+
+$colorPrimary: $colorLightGrey;
+$colorSecondary: $colorGreyTransp;
+$colorTertiary: $colorDarkRed;
+$colorFont: $colorBlack;
+
+// fonts
+$font-family-subtitle: roboto;
+$font-family-title: montserrat;
+$font-family-description: roboto;
+$font-path: "../fonts";
