@@ -1,10 +1,11 @@
 @import "../../styles/variables";
 
 .home {
-  background-image: url("../../images/bg_eformaliza.png");
+  background-image: url("../../images/fundo_preto.svg");
   background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
+  // background-color: black;
 
   &__box {
     text-align: center;
