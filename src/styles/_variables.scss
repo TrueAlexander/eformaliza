@@ -1,7 +1,7 @@
 //variables
 
 //colors static
-$colorBlack: #000;
+$colorBlack: rgb(53, 53, 53);
 $colorLightGrey: #cccccc;
 $colorDarkRed: #ce4809;
 $colorGrey: #808080;
@@ -12,12 +12,12 @@ $colorViolet087: rgba(82, 32, 110, 0.87);
 //colors dynamic
 
 $colorPrimary: $colorLightGrey;
-$colorSecondary: $colorGreyTransp;
+$colorSecondary: $colorBlack;
 $colorTertiary: $colorDarkRed;
 $colorFont: $colorBlack;
 
 // fonts
 $font-family-subtitle: roboto;
-$font-family-title: montserrat;
+$font-family-title: roboto;
 $font-family-description: roboto;
 $font-path: "../fonts";

@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+// .home {
+//   background-image: url("../../images/fundo_preto.svg");
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: repeat-x;
+//   // background-color: black;
+
+//   &__box {
+//     text-align: center;
+//     padding: 200px 40px 0;
+//     max-width: 100%;
+//     height: 100vh;
+//     color: white;
+//     font-size: 2em;
+//     font-family: $font-family-title, sans-serif;
+//     font-weight: 700;
+//     text-shadow: 0 0 5px red;
+//     line-height: 1.5em;
+//   }
+
+//   &__title {
+//     background-color: $colorSecondary;
+//     border-radius: 8px;
+//     margin: 20px auto;
+//     text-transform: uppercase;
+//     width: fit-content;
+//     padding: 7px 30px;
+//   }
+//   &__image {
+//     width: 150px;
+//     float: left;
+//   }
+
+//   &__list {
+//     li {
+//       text-transform: lowercase;
+//     }
+
+//     li::before {
+//       content: "- ";
+//     }
+//   }
+// }
+
+// @media (max-width: 883px) {
+//   .home {
+//     &__description {
+//       line-height: 1.2em;
+//     }
+//   }
+// }
+// @media (max-width: 700px) {
+//   .home {
+//     padding-top: 400px;
+//     height: 100vh;
+
+//     &__box {
+//       padding: 0;
+//       font-size: 1.4em;
+//       line-height: 1.2em;
+//     }
+//   }
+// }

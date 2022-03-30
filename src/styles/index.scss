@@ -1,12 +1,16 @@
 //components styles
 @use "./container";
 @use "../components/header/header";
-@use "../components/footer/footer";
+@use "../components/home/home";
+@use "../components/ask/ask";
+@use "../components/discount/discount";
+
 @use "../components/services/services";
 @use "../components/opinions/opinions";
 @use "../components/obras/obras";
-@use "../components/home/home";
 @use "../components/product/product";
+
+@use "../components/footer/footer";
 
 //import fonts and variables
 @import "fonts";

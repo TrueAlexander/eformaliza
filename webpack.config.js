@@ -24,6 +24,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'criamos.html',
+      template: 'src/criamos.pug'
     })
   ],
   devServer: {

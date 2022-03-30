@@ -4,5 +4,19 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
-  text-shadow: 0 0px 2px $colorTertiary;
+  // text-shadow: 0 0px 2px $colorTertiary;
+}
+
+.title {
+  background-color: $colorSecondary;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 7px 30px;
+  color: white;
+  text-shadow: 0 0 5px red;
+  font-family: $font-family-title, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.07em;
 }
