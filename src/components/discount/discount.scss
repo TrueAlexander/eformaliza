@@ -8,15 +8,25 @@
   color: #ffffff;
   text-align: center;
   font-family: $font-family-subtitle, sans-serif;
+
   &__title {
-    margin-top: 100px;
-    font-size: 2em;
+    margin: 150px auto 0;
+    font-size: 4.5em;
+  }
+
+  &__image {
+    width: 150px;
+    margin: 85px auto 0;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
 .timer {
   color: white;
-  height: 80vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

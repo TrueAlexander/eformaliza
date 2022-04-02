@@ -5,6 +5,9 @@ const ask = () => {
     event.preventDefault();
     ///
     console.log('sent to server');
+
+
+    // https://eformaliza-db-default-rtdb.firebaseio.com/
     ////
   })
 }

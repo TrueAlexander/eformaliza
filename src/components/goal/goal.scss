@@ -1,65 +1,73 @@
 @import "../../styles/variables";
 
-// .home {
-//   background-image: url("../../images/fundo_preto.svg");
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: repeat-x;
-//   // background-color: black;
+.goal {
+  background-color: black;
+  color: white;
+  font-family: $font-family-title;
+  font-size: 2em;
+  text-shadow: 0 0 5px red;
+  font-family: $font-family-title, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 
-//   &__box {
-//     text-align: center;
-//     padding: 200px 40px 0;
-//     max-width: 100%;
-//     height: 100vh;
-//     color: white;
-//     font-size: 2em;
-//     font-family: $font-family-title, sans-serif;
-//     font-weight: 700;
-//     text-shadow: 0 0 5px red;
-//     line-height: 1.5em;
-//   }
+  &__wrapper {
+    height: 100vh;
+    display: flex;
+  }
 
-//   &__title {
-//     background-color: $colorSecondary;
-//     border-radius: 8px;
-//     margin: 20px auto;
-//     text-transform: uppercase;
-//     width: fit-content;
-//     padding: 7px 30px;
-//   }
-//   &__image {
-//     width: 150px;
-//     float: left;
-//   }
+  &__image {
+    flex: 0 1 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 
-//   &__list {
-//     li {
-//       text-transform: lowercase;
-//     }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgb(129, 7, 7);
+      box-shadow: 0 0 10px rgb(129, 7, 7);
+    }
+  }
 
-//     li::before {
-//       content: "- ";
-//     }
-//   }
-// }
+  &__box {
+    flex: 0 1 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 20px;
+  }
 
-// @media (max-width: 883px) {
-//   .home {
-//     &__description {
-//       line-height: 1.2em;
-//     }
-//   }
-// }
-// @media (max-width: 700px) {
-//   .home {
-//     padding-top: 400px;
-//     height: 100vh;
+  &__content {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(129, 7, 7);
+    box-shadow: 0 0 5px rgb(129, 7, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $colorBlack;
+    margin-bottom: 20px;
+  }
 
-//     &__box {
-//       padding: 0;
-//       font-size: 1.4em;
-//       line-height: 1.2em;
-//     }
-//   }
-// }
+  &__question {
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  &__answer {
+    text-align: left;
+    text-transform: lowercase;
+    text-shadow: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    width: 90%;
+    margin: 20px 0 0 auto;
+    line-height: 1.5em;
+  }
+
+  &__answer::before {
+    content: " - ";
+  }
+}
