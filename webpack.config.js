@@ -23,7 +23,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.pug'
+      template: 'src/index.pug',
+      favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       filename: 'criamos.html',
