@@ -34,7 +34,7 @@
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     padding: 20px;
   }
@@ -42,12 +42,12 @@
   &__content {
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid rgb(129, 7, 7);
-    box-shadow: 0 0 5px rgb(129, 7, 7);
+    // border: 1px solid rgb(129, 7, 7);
+    // box-shadow: 0 0 5px rgb(129, 7, 7);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $colorBlack;
+    // background-color: $colorBlack;
     margin-bottom: 20px;
     font-size: 0.8em;
   }
