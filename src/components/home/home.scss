@@ -20,6 +20,10 @@
   &__greetings {
     text-align: center;
     line-height: 1.3em;
+    font-size: 3em;
+    // text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
   }
 
   &__row {
