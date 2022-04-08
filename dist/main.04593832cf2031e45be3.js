@@ -15,10 +15,31 @@ __webpack_require__.r(__webpack_exports__);
 var ask = function ask() {
   var form = document.querySelector('.form');
   form.addEventListener('submit', function (event) {
-    event.preventDefault(); ///
-
-    console.log('sent to server'); // https://eformaliza-db-default-rtdb.firebaseio.com/
-    ////
+    event.preventDefault();
+    var formData = new FormData(form);
+    var body = {};
+    formData.forEach(function (value, field) {
+      body[field] = value;
+    });
+    fetch('https://eformaliza-db-default-rtdb.firebaseio.com/contacts.json', {
+      method: 'POST',
+      body: JSON.stringify(body),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+      }
+    }).then(function (response) {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error(response.status);
+      }
+    }).then(function (data) {
+      alert('Muito Obrigado, em breve entraremos em contato com você!!!');
+    })["catch"](function (error) {
+      alert('error' + error.message);
+    })["finally"](function () {
+      form.reset();
+    });
   });
 };
 
@@ -12622,4 +12643,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.1a51815accc7ccf866d9.js.map
+//# sourceMappingURL=main.04593832cf2031e45be3.js.map
