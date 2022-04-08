@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.discount {
+  background-image: url("../../images/fundo_leve1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: #ffffff;
+  text-align: center;
+  font-family: $font-family-subtitle, sans-serif;
+
+  &__title {
+    margin: 90px auto 0;
+    font-size: 3.2em;
+  }
+
+  &__image {
+    width: 165px;
+    margin: 60px auto 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.timer {
+  
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  letter-spacing: 0.1em;
+
+  &__text {
+    
+    line-height: 1.3em;
+    font-size: 2em;
+    padding: 20px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    letter-spacing: 0.1em;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 40px 0;
+    text-shadow: 0 0 4px white;
+   
+  }
+
+  &__title {
+    color:#ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 7px;
+    margin: 0 auto;
+    transition: all 0.3s linear 0.1s;
+    line-height: 1.3em;
+  }
+
+
+  &__title:hover {
+    text-shadow: 0 0 5px rgb(129, 7, 7);
+    transform: scale(1.05);
+    text-shadow: 0 0 2px white;
+    transition: all 0.3s linear 0.1s;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  
+}

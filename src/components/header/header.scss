@@ -21,6 +21,8 @@ body.lock {
     padding: 0 0 15px;
     margin-right: 40px;
     // border: 1px solid white;
+    z-index: 151;
+    position: relative;
   }
   img.header__logo_scroll {
     display: none;
@@ -39,7 +41,7 @@ body.lock {
     content: "";
     color: #fff;
     display: block;
-    background-image: url("/images/logo_without_letters.svg");
+    background-image: url("/images/logo_without_letters_red_black.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,23 +60,17 @@ body.lock {
 
   &__item {
     flex: 0 0 12%;
-    // background-color: $colorTertiary;
     padding: 3px;
     transition: all 0.3s linear 0.1s;
-    // border: 1px solid white;
-    // border-radius: 20px;
-
-    a {
-      text-transform: uppercase;
-      display: block;
-      color: white;
-      letter-spacing: 0.05em;
-      padding: 5px;
-    }
+    text-transform: uppercase;
+    display: block;
+    color: white;
+    letter-spacing: 0.05em;
+    padding: 5px;
   }
 
   &__item:hover {
-    transform: scale(1.02);
+    transform: scale(1.2);
     text-shadow: 0 0 2px white;
     transition: all 0.3s linear 0.1s;
     border-top: 1px solid white;

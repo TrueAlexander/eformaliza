@@ -2,28 +2,20 @@
 
 .footer {
   color: #fff;
-  background-color: #ce470988;
+  background-color: $colorBlack;
   padding: 15px 0;
   position: relative;
 
-  &__title.sectionTitle {
-    padding-top: 0;
-  }
-
-  &__logo {
-    position: absolute;
-    img {
-      margin: 10px auto;
-      width: 170px;
-    }
+  &__title {
+    border: none;
+    box-shadow: none;
   }
 
   &__row {
     display: flex;
-    margin: 25px 0 35px auto;
+    margin: 25px auto 35px;
     justify-content: center;
-    width: 90%;
-    padding-left: 50px;
+    width: 100%;
   }
 
   &__item {
@@ -39,9 +31,9 @@
     transition: all 0.3s linear 0.1s;
 
     img {
-      background-color: $colorTertiary;
+      background-color: rgba(189, 30, 30, 0.705);
+      box-shadow: 0 0 4px red;
       border-radius: 50%;
-      box-shadow: 0 0 10px $colorTertiary;
       height: 70%;
       margin-right: 15px;
     }
@@ -56,10 +48,10 @@
     transform: translateY(-2px) scale(1.04);
     transition: all 0.3s linear 0.1s;
     img {
-      box-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
+      box-shadow: 0 0 4px white;
     }
     p {
-      text-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
+      text-shadow: 0 0 2px white;
     }
   }
 }

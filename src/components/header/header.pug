@@ -1,17 +1,14 @@
 header.header
-  .container    
-    img.header__logo.logo(src=require("../../../images/logo_eformaliza.svg"), alt="eformaliza")
+  .container
+    a(href="./index.html")   
+      img.header__logo.logo(src=require("../../../images/logo_eformaliza_red_black.svg"), alt="eformaliza")
     nav.header__nav 
-      ul.header__list 
-        li.header__item
-          a(href="./index.html#home") Home
-        li.header__item
-          a(href="./index.html#servicos") Criamos
-        li.header__item
-          a(href="./index.html#obras") Promovemos
-        li.header__item
-          a(href="./index.html#opinions") Redes
-        li.header__item  
-          a(href="./index.html#contacts") Contatos
+      .header__list
+        a.header__item(href="index.html") Home
+        a.header__item(href="criamos.html") Criamos      
+        a.header__item(href="promovemos.html") Promovemos
+        a.header__item(href="./index.html") Blog
+        a.header__item(href="./index.html") FAQ
+        a.header__item(href="#contacts") Contatos
     nav.header__nav_burger
       .burger__inner  
