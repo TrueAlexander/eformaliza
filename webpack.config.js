@@ -28,7 +28,23 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'criamos.html',
-      template: 'src/criamos.pug'
+      template: 'src/criamos.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'promovemos.html',
+      template: 'src/promovemos.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'faq.html',
+      template: 'src/faq.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
+      template: 'src/blog.pug',
+      favicon: 'src/favicon.ico',
     })
   ],
   devServer: {
