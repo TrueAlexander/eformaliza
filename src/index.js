@@ -1,14 +1,15 @@
-import './styles/index.scss';
+import './styles/index.scss'
+import './components/header/header.js'
+import discount from './components/discount/discount'
+import ask from './components/ask/ask'
+import offers from './components/offers/offers'
+import scrollTo from './scrollTo'
+import antiFouc from './antiFouc'
 
-import './components/header/header.js';
-import discount from './components/discount/discount';
-import ask from './components/ask/ask';
-import offers from './components/offers/offers';
-import scrollTo from './scrollTo';
 
 
-
-scrollTo();
-discount();
-ask();
-offers();
+scrollTo()
+discount()
+ask()
+offers()
+antiFouc()
