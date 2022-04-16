@@ -29,10 +29,6 @@
   }
 }
 .creation {
-  // background-image: url("../../images/fundo_leve1.jpg");
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: repeat-x;
   background-color: black;
   padding: 50px 0 0;
   color: white;
@@ -50,12 +46,13 @@
   }
 
   &__box {
+    max-width: 90%;
     padding: 10px 30px;
     display: flex;
     font-size: 2em;
     font-family: $font-family-subtitle, sans-serif;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     line-height: 2.1em;
     font-weight: 600;
   }
@@ -68,7 +65,7 @@
   }
 
   &__about {
-    padding: 20px 20px 20px 100px;
+    padding: 20px 20px 20px 250px;
     flex: 0 1 70%;
    
     li:before {

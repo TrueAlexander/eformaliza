@@ -6,15 +6,15 @@
         .form__label
           label(for="name") Seu nome
         .form__input 
-          input(type="text" placeholder="nome" name="name")
+          input(type="text" placeholder="nome" name="name" required)
         .form__label
           label(for="name") Seu telefone
         .form__input
-          input(type="phone" placeholder="telefone" name="phone")
+          input(type="phone" placeholder="telefone" name="phone" required)
         .form__label
           label(for="name") Seu email
         .form__input
-          input(type="email" placeholder="email" name="email")
+          input(type="email" placeholder="email" name="email" required)
         button.form__btn.btn(type="submit") Solicitar!  
       .ask__image
         img(src=require("../../../images/student_asking_question.svg"), alt="ask")
