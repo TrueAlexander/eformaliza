@@ -3,7 +3,7 @@
 .offers {
   color: white;
   font-family: $font-family-subtitle, sans-serif;
-  padding: 45px 0;
+  padding: 45px 0 0;
 
   &__title {
   }
@@ -11,7 +11,7 @@
   &__box {
     font-size: 1.2em;
     display: flex;
-    margin-bottom: 30px;
+   
   }
 
   &__list {

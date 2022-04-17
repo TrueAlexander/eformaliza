@@ -1,0 +1,118 @@
+@import "../../styles/variables";
+
+.portfolio {
+
+  padding: 40px 0;
+  position: relative;
+  background-color: $colorBlack;
+ 
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: rgba(255, 255, 255, 0.7);
+    top: 57%;
+    position: absolute;
+    z-index: 20;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: red;
+  }
+}
+.swiper {
+  // max-width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px $colorPrimary;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+ 
+
+  &-wrapper {
+    
+    // margin: 40px;
+
+    .swiper-slide {
+      margin: 20px 0;
+      background-image: url("../../images/margarita.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 350px;
+      overflow: hidden;
+      border: 7px solid $colorBlack;
+      border-radius: 40px;
+      // // padding: 15px;
+      // text-align: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      transition: all 0.3s linear 0.1s;
+    }
+    .swiper-slide:hover {
+      transition: all 0.3s linear 0.1s;
+      // box-shadow: 0 7px 15px $colorTertiary;
+      transform: scale(1.02);
+      cursor: grabbing;
+    }
+  }
+
+  // &-opinion {
+  //   font-family: $font-family-description, sans-serif;
+  //   line-height: 1.4em;
+  //   font-size: 1.3em;
+  //   flex: 1 1 auto;
+  // }
+  // &-opinion:before,
+  // &-opinion:after {
+  //   content: ' " ';
+  // }
+
+  // &-client {
+  //   text-transform: uppercase;
+  //   margin: 10px auto;
+  //   font-family: julian, sans-serif;
+  //   font-size: 1.2em;
+  // }
+
+  // &-city {
+  //   text-transform: capitalize;
+  //   font-weight: 700;
+  //   font-size: 1.1em;
+  // }
+
+  &-pagination {
+  
+    margin-bottom: 10px;
+    .swiper-pagination-bullet {
+      opacity: 1;
+      background-color: rgb(255, 255, 255);
+    }
+    .swiper-pagination-bullet-active {
+      background-color: rgb(255, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 883px) {
+  .swiper {
+    height: auto;
+
+    &-wrapper {
+      .swiper-slide {
+        height: auto;
+      }
+    }
+  }
+}
