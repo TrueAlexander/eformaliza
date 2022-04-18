@@ -1,28 +1,5 @@
 @import "variables";
 
-//gothic
-
-@font-face {
-  $font-name: "GothicA1-Bold";
-  font-family: gothic;
-  font-weight: 700;
-  src: url(#{$font-path}/#{$font-name}.ttf);
-}
-
-@font-face {
-  $font-name: "GothicA1-Regular";
-  font-family: gothic;
-  font-weight: 400;
-  src: url(#{$font-path}/#{$font-name}.ttf);
-}
-
-@font-face {
-  $font-name: "GothicA1-SemiBold";
-  font-family: gothic;
-  font-weight: 600;
-  src: url(#{$font-path}/#{$font-name}.ttf);
-}
-
 //roboto
 
 @font-face {
@@ -57,14 +34,6 @@
   src: url(#{$font-path}/#{$font-name}.ttf);
 }
 
-//montserrat
-
-@font-face {
-  $font-name: "Montserrat-ExtraLight";
-  font-family: montserrat;
-  font-weight: 200;
-  src: url(#{$font-path}/#{$font-name}.ttf);
-}
 
 //robotoSlab
 
