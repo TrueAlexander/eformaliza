@@ -29,3 +29,7 @@ $(".header__nav_burger").click(function () {
     });
   }
 });
+
+const headerLogo = document.querySelector('.header__logo')
+
+console.dir(headerLogo)
