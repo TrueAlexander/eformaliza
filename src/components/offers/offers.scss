@@ -96,3 +96,192 @@
     margin-top: -26px;
   }
 }
+
+@media (max-width: 1030px) {
+  .offers {
+    // color: white;
+    // font-family: $font-family-subtitle, sans-serif;
+    // padding: 45px 0 0;
+  
+    // &__box {
+    //   font-size: 1.2em;
+    //   display: flex;
+     
+    // }
+  
+    &__list {
+      // padding: 10px 0;
+      flex: 0 1 60%;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
+  
+    &__item { 
+      margin: 15px 0;
+    }
+  
+    &__image {
+      flex: 0 1 40%;
+      // overflow: hidden;
+      padding: 5px;
+      // display: flex;
+      // align-items: center;
+    }
+  }
+  
+  .offer {
+    &__btn {
+      // z-index: 20;
+      // background-color: $colorBlack;
+      // padding: 7px 15px;
+      // border: 1px solid white;
+      // border-radius: 15px;
+      // margin: 10px 0;
+      font-size: 1em;
+      // width: 100%;
+      // text-align: left;
+      // position: relative;
+      // transition: all 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    }
+  
+    // &__btn.active {
+    //   border-radius: 15px 15px 0 0;
+    //   transition: all 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    // &__btn::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: 15px;
+    //   bottom: 15px;
+    //   width: 17px;
+    //   height: 17px;
+    //   border: 3px solid;
+    //   border-color: transparent #fff #fff transparent;
+    //   transform: rotate(45deg);
+    //   transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    // &__btn.active::after {
+    //   border-color: #fff transparent transparent #fff;
+    //   bottom: 5px;
+    //   transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    &__description {
+      // line-height: 1.3em;
+      font-size: 1em;
+      // background-color: #000; 
+      // border: 1px solid;
+      // overflow: hidden;
+      // transition: all 0.4s ease-in-out;
+      // padding: 7px 15px;
+      // border: 1px solid white;
+      // border-radius: 0 0 15px 15px;
+      // z-index: 1;
+      // height: auto;
+      // margin-top: -6px;
+      // height: 0;
+      // margin-top: -26px;
+    }
+  }
+  
+}
+
+
+@media (max-width: 700px) {
+  .offers {
+    // color: white;
+    // font-family: $font-family-subtitle, sans-serif;
+    // padding: 45px 0 0;
+  
+    &__box {
+      
+      // font-size: 1.2em;
+      // display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    // &__list {
+    //   // padding: 10px 0;
+    //   // flex: 0 1 60%;
+    //   // display: flex;
+    //   // flex-direction: column;
+    //   // justify-content: center;
+    // }
+  
+    // &__item { 
+    //   margin: 15px 0;
+    // }
+  
+    &__image {
+    
+      // flex: 0 1 40%;
+      // overflow: hidden;
+      max-width: 350px;
+      padding: 20px 20px 0;
+      margin: 0 auto;
+      // display: flex;
+      // align-items: center;
+    }
+  }
+  
+  .offer {
+    &__btn {
+      // z-index: 20;
+      // background-color: $colorBlack;
+      // padding: 7px 15px;
+      // border: 1px solid white;
+      // border-radius: 15px;
+      // margin: 10px 0;
+      // font-size: 1em;
+      // width: 100%;
+      // text-align: left;
+      // position: relative;
+      // transition: all 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    }
+  
+    // &__btn.active {
+    //   border-radius: 15px 15px 0 0;
+    //   transition: all 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    // &__btn::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: 15px;
+    //   bottom: 15px;
+    //   width: 17px;
+    //   height: 17px;
+    //   border: 3px solid;
+    //   border-color: transparent #fff #fff transparent;
+    //   transform: rotate(45deg);
+    //   transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    // &__btn.active::after {
+    //   border-color: #fff transparent transparent #fff;
+    //   bottom: 5px;
+    //   transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    // }
+  
+    &__description {
+      // line-height: 1.3em;
+      // font-size: 1em;
+      // background-color: #000; 
+      // border: 1px solid;
+      // overflow: hidden;
+      // transition: all 0.4s ease-in-out;
+      // padding: 7px 15px;
+      // border: 1px solid white;
+      // border-radius: 0 0 15px 15px;
+      // z-index: 1;
+      // height: auto;
+      // margin-top: -6px;
+      // height: 0;
+      // margin-top: -26px;
+    }
+  }
+  
+}
