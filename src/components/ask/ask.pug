@@ -1,7 +1,9 @@
 .ask#ask
   .container
-    p.ask__title.title SOLICITE UMA CONVERSA SEM COMPROMISSo:
-    .ask__box  
+    p.ask__title.title SOLICITE UMA CONVERSA SEM COMPROMISSO:
+    .ask__box
+      .ask__image
+        img(src=require("../../../images/student_asking_question.svg"), alt="ask") 
       form.ask__form.form(action="#")
         .form__label
           label(for="name") Seu nome
@@ -16,5 +18,3 @@
         .form__input
           input(type="email" placeholder="email" name="email" required)
         button.form__btn.btn(type="submit") Solicitar!  
-      .ask__image
-        img(src=require("../../../images/student_asking_question.svg"), alt="ask")
