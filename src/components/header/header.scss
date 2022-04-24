@@ -190,6 +190,7 @@
     img.logo {
       height: 90px;
       opacity: 1;
+      
     }
 
     &__nav_burger {
@@ -241,9 +242,6 @@
     &__list {
       display: block;
       background-color: $colorBlack;
-      // text-shadow: 0 3px 10px $colorPrimary;
-      // box-shadow: 0 5px 5px $colorSecondary;
-      // border-radius: 0 0 50% 50%;
       padding-bottom: 15px;
     }
 
@@ -266,10 +264,13 @@
   }
 
   .scroll.header {
+    height: 72px;
+
     &__nav {
       width: 100%;
       font-size: 1.5em;
       line-height: 2em;
+      
     }
 
 
@@ -290,6 +291,7 @@
     img.logo.scroll {
       height: 80px;
       opacity: 1;
+      
     }
   }
 }
