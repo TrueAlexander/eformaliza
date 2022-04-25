@@ -219,14 +219,12 @@
     }
   
   
-    // &__title:hover {
-    //   text-shadow: 0 0 5px rgb(129, 7, 7);
-    //   transform: scale(1.05);
-    //   text-shadow: 0 0 2px white;
-    //   transition: all 0.3s linear 0.1s;
-    //   border-top: 2px solid white;
-    //   border-bottom: 2px solid white;
-    // }
+    &__title:hover {
+      text-shadow: none;
+      transform: none;
+      border-top: none;
+      border-bottom: none;
+    }
     
   }
 }

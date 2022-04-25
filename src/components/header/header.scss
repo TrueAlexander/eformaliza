@@ -10,6 +10,7 @@
  
 
   img.logo {
+   
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
@@ -82,7 +83,7 @@
     position: absolute;
     transition: all 0.8s linear 0.05s;
     top: 20px;
-    right: 12%;
+    right: 6%;
 
     .burger__inner {
       background-color: white;
