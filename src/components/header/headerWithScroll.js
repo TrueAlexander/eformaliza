@@ -1,4 +1,4 @@
-import { elementScrollIntoView } from "seamless-scroll-polyfill";
+import { elementScrollIntoView, windowScroll } from "seamless-scroll-polyfill";
 import $ from 'jquery';
 
 const headerWithScroll = () => {
@@ -41,16 +41,26 @@ const headerWithScroll = () => {
   }
 
   const scrollingBurger = (clickedLink) => {
-      
+
+      const homeLink = document.getElementById('toHome')
+
       console.log(clickedLink);
       const id = clickedLink.getAttribute('href').substring(1)
       const target = document.getElementById(id)
 
-      elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
-      console.log('scrollingBurger');
+      if (clickedLink === homeLink) {
+        
+        if (window.scrollY > 0) {
+          elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
+        } else {
+          window.location.reload()
+        }
+
+      } else {
+        elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
+      }      
   }
   
- 
     //scroll/full header
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
