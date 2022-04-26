@@ -195,6 +195,7 @@ var headerWithScroll = function headerWithScroll() {
       } else {
         jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__nav_burger, .header__nav, .header__list, .header__item").toggleClass("dropped");
         jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__item").click(function () {
+          scrolling();
           jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__nav_burger, .header__nav, .header__list, .header__item").removeClass("dropped");
           jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("lock");
         });
@@ -25568,4 +25569,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.704b9f51cfc2416dde83.js.map
+//# sourceMappingURL=main.4b46bcae9a147399379d.js.map
