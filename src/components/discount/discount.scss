@@ -63,8 +63,27 @@
     line-height: 1.3em;
   }
 
+  &__link {
+    margin: 15px 0;
+  }
 
-  &__title:hover {
+  &__link::before {
+    content: '\27A4   ';
+    width: fit-content;
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+
+  &__link::after {
+    content: '  \27A4';
+    width: fit-content;
+    display: inline-block;
+    transform:rotate(180deg);
+    
+  }
+
+  &__link:hover {
     text-shadow: 0 0 5px rgb(129, 7, 7);
     transform: scale(1.05);
     text-shadow: 0 0 2px white;

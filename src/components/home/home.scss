@@ -225,9 +225,9 @@
   .home {
    
     &__box {
-      padding-top: 140px;
+      padding-top: 120px;
       // max-width: 100%;
-      // height: 100vh;
+      height: auto;
       // color: white;
       // // font-family: $font-family-title, sans-serif;
       // display: flex;
@@ -299,70 +299,70 @@
    
     &__box {
       padding-top: 100px;
-      // max-width: 100%;
-      height: auto;
-      // color: white;
-      // // font-family: $font-family-title, sans-serif;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-around;
+  //     // max-width: 100%;
+  //     height: auto;
+  //     // color: white;
+  //     // // font-family: $font-family-title, sans-serif;
+  //     // display: flex;
+  //     // flex-direction: column;
+  //     // justify-content: space-around;
      
     }
   
-    &__greetings {
-      // text-align: center;
-      // line-height: 1.3em;
-      font-size: 1.8em;
-      // font-weight: 600;
-      // letter-spacing: 0.1em;
-    }
+  //   &__greetings {
+  //     // text-align: center;
+  //     // line-height: 1.3em;
+  //     font-size: 1.8em;
+  //     // font-weight: 600;
+  //     // letter-spacing: 0.1em;
+  //   }
   
-    &__row {
-      margin-right: 0;
-      // font-size: 0.8em;
-      padding: 10px 0;
-      // font-weight: 700;
-      // line-height: 1em;
-      // display: block;
-      // align-items: center;
-      // justify-content: space-between;
-    }
+  //   &__row {
+  //     margin-right: 0;
+  //     // font-size: 0.8em;
+  //     padding: 10px 0;
+  //     // font-weight: 700;
+  //     // line-height: 1em;
+  //     // display: block;
+  //     // align-items: center;
+  //     // justify-content: space-between;
+  //   }
   
-    &__column {
+  //   &__column {
    
-      // flex: 0 1 50%;
-      height: auto;
-      // overflow: hidden;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-    }
+  //     // flex: 0 1 50%;
+  //     height: auto;
+  //     // overflow: hidden;
+  //     // display: flex;
+  //     // flex-direction: column;
+  //     // justify-content: center;
+  //   }
   
-    &__title {
-      // font-size: 2em;
-      // text-transform: uppercase;
-      // text-align: center;
-      margin: 30px 0;
-    }
+  //   &__title {
+  //     // font-size: 2em;
+  //     // text-transform: uppercase;
+  //     // text-align: center;
+  //     margin: 30px 0;
+  //   }
   
-    &__list {
-      padding-bottom: 40px;
-      li {
-        font-size: 1.8em;
-        // text-transform: capitalize;
-        // text-align: center;
-        // font-family: $font-family-subtitle;
-        // font-weight: 400;
-        line-height: 1.5em;
+  //   &__list {
+  //     padding-bottom: 40px;
+  //     li {
+  //       font-size: 1.8em;
+  //       // text-transform: capitalize;
+  //       // text-align: center;
+  //       // font-family: $font-family-subtitle;
+  //       // font-weight: 400;
+  //       line-height: 1.5em;
         
-      }
-    }
+  //     }
+  //   }
   
-    &__video {
-      // border-radius: 10px;
-      margin: 5px auto;
-       width: 90%;
-       height: 220px;
-    }
+  //   &__video {
+  //     // border-radius: 10px;
+  //     margin: 5px auto;
+  //      width: 90%;
+  //      height: 220px;
+  //   }
   }
 }
