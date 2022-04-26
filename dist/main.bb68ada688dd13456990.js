@@ -181,15 +181,28 @@ var headerWithScroll = function headerWithScroll() {
   };
 
   var scrollingBurger = function scrollingBurger(clickedLink) {
+    var homeLink = document.getElementById('toHome');
     console.log(clickedLink);
     var id = clickedLink.getAttribute('href').substring(1);
     var target = document.getElementById(id);
-    (0,seamless_scroll_polyfill__WEBPACK_IMPORTED_MODULE_1__.elementScrollIntoView)(target, {
-      behavior: "smooth",
-      block: "start",
-      inline: "center"
-    });
-    console.log('scrollingBurger');
+
+    if (clickedLink === homeLink) {
+      if (window.scrollY > 0) {
+        (0,seamless_scroll_polyfill__WEBPACK_IMPORTED_MODULE_1__.elementScrollIntoView)(target, {
+          behavior: "smooth",
+          block: "start",
+          inline: "center"
+        });
+      } else {
+        window.location.reload();
+      }
+    } else {
+      (0,seamless_scroll_polyfill__WEBPACK_IMPORTED_MODULE_1__.elementScrollIntoView)(target, {
+        behavior: "smooth",
+        block: "start",
+        inline: "center"
+      });
+    }
   }; //scroll/full header
 
 
@@ -25596,4 +25609,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.4a21ceea963fa29e42ca.js.map
+//# sourceMappingURL=main.bb68ada688dd13456990.js.map
