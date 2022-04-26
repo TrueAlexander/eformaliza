@@ -197,6 +197,7 @@
 
     &__nav_burger {
       display: block;
+      overflow: auto;
       
       
     }
@@ -230,6 +231,7 @@
       display: block;
       top: 55px;
       display: none;
+      overflow: auto;
       
     }
     &__item:hover {
@@ -245,6 +247,8 @@
       display: block;
       background-color: $colorBlack;
       padding-bottom: 15px;
+      overflow: auto;
+      
     }
 
     &__item {
