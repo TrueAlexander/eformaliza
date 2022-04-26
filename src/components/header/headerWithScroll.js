@@ -63,6 +63,7 @@ const headerWithScroll = () => {
       } else {
         $(".header__nav_burger, .header__nav, .header__list, .header__item").toggleClass("dropped");
         $(".header__item").click(function () {
+          scrolling()
           $(".header__nav_burger, .header__nav, .header__list, .header__item").removeClass("dropped");
           $("body").removeClass("lock");
         });
