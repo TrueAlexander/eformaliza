@@ -3,7 +3,7 @@
 .footer {
   color: #fff;
   background-color: $colorBlack;
-  padding: 15px 0;
+  padding: 15px 0 20px;
   position: relative;
 
   &__title {
@@ -55,6 +55,62 @@
       text-shadow: 0 0 2px white;
     }
   }
+
+  &__box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__unit {
+    height: 65px;
+    display: flex;
+    align-items: center; 
+  }
+
+  &__dove {
+    margin-left: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 5px white;
+    border-radius: 50%;
+    height: 100%;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__copyright {
+     
+    p {
+      font-family: $font-family-title, Arial, Helvetica, sans-serif;
+      text-transform: lowercase;
+      line-height: 30px;
+      position: relative;
+      a {
+        text-transform: none;
+        color: inherit;
+        font-size: inherit;
+      }
+    }
+
+    p::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -35px;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../src/favicon.ico");
+      background-position: center;
+      background-size: contain;
+      border-radius: 50%;
+    }
+  }
+
+
+
+
 }
 
 @media (max-width: 1290px) {
@@ -98,6 +154,59 @@
       }
       img {
         height: 70%;
+      }
+    }
+
+    &__box {
+      margin-top: 0;
+      // display: flex;
+      // justify-content: space-between;
+    }
+  
+    &__unit {
+      height: 50px;
+      // display: flex;
+      // align-items: center; 
+    }
+  
+    &__dove {
+      margin-left: 30px;
+      // overflow: hidden;
+      // box-shadow: 0 0 5px white;
+      // border-radius: 50%;
+      // height: 100%;
+      // img {
+      //   height: 100%;
+      // }
+    }
+  
+    &__copyright {
+       
+      p {
+        font-size: 0.9em;
+        // font-family: $font-family-title, Arial, Helvetica, sans-serif;
+        // text-transform: lowercase;
+        // line-height: 30px;
+        // position: relative;
+        // a {
+        //   text-transform: none;
+        //   color: inherit;
+        //   font-size: inherit;
+        // }
+      }
+  
+      p::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -35px;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../src/favicon.ico");
+        background-position: center;
+        background-size: contain;
+        border-radius: 50%;
       }
     }
   }
