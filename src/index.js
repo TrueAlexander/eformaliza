@@ -12,6 +12,6 @@ import antiFouc from './antiFouc'
 headerWithScroll()
 discount()
 portfolio()
-ask()
+// ask()
 offers()
 antiFouc()
