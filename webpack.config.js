@@ -27,8 +27,8 @@ module.exports = {
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: 'criamos.html',
-      template: 'src/criamos.pug',
+      filename: 'emailSent.html',
+      template: 'src/emailSent.pug',
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
