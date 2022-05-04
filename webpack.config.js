@@ -27,25 +27,30 @@ module.exports = {
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: './pages/emailSent.html',
+      filename: 'emailSent.html',
       template: 'src/emailSent.pug',
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: 'promovemos.html',
-      template: 'src/promovemos.pug',
+      filename: 'esp.html',
+      template: 'src/esp.pug',
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: 'faq.html',
-      template: 'src/faq.pug',
+      filename: 'eng.html',
+      template: 'src/eng.pug',
       favicon: 'src/favicon.ico',
     }),
-    new HtmlWebpackPlugin({
-      filename: 'blog.html',
-      template: 'src/blog.pug',
-      favicon: 'src/favicon.ico',
-    })
+    // new HtmlWebpackPlugin({
+    //   filename: 'faq.html',
+    //   template: 'src/faq.pug',
+    //   favicon: 'src/favicon.ico',
+    // }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'blog.html',
+    //   template: 'src/blog.pug',
+    //   favicon: 'src/favicon.ico',
+    // })
   ],
   devServer: {
     static: './src/index.pug',
