@@ -32,6 +32,16 @@ module.exports = {
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
+      filename: 'emailSentEng.html',
+      template: 'src/emailSentEng.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'emailSentEsp.html',
+      template: 'src/emailSentEsp.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
       filename: 'esp.html',
       template: 'src/esp.pug',
       favicon: 'src/favicon.ico',
