@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.langToggle {
+
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 1000;
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
+
+  &__item {
+    margin-left: 50px;
+  }
+
+  &__btn {
+    font-size: 1.2em;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    transform: scale(1.1);
+  }
+
+
+  &__btn.active {
+    color: red;
+    
+  }
+
+  
+
+}

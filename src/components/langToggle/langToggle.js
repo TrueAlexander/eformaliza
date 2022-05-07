@@ -1,0 +1,32 @@
+
+const langToggle = () => {
+
+  const langs = document.querySelectorAll('.langToggle__btn')
+
+  langs.forEach((lang) => {
+    lang.addEventListener('click', (event) => {     
+      if (event.target.classList.contains('active')) {}
+        else {
+        langs.forEach((lang) => {
+          lang.classList.remove('active')
+        })
+        event.target.classList.add('active')
+
+        if (event.target.innerHTML === 'En') {
+          //load eng.html
+          window.open("./eng.html","_self")
+        } else if (event.target.innerHTML === 'Es') {
+          //load esp.html
+          window.open("./esp.html","_self")
+        } else {
+          //load index.html
+          window.open("./index.html","_self")
+        }
+         
+      }
+    })
+    
+  })
+}
+
+export default langToggle

@@ -2,6 +2,8 @@
 
 body {
   background-color: $colorSecondary;
+  color: white;
+  font-family: $font-family-subtitle;
 }
 
 body.lock {
