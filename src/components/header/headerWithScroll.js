@@ -65,9 +65,11 @@ const headerWithScroll = () => {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
       $(".header, .header__logo, .header__title, .header__nav, .header__nav_burger").addClass("scroll");
+      $(".langToggle").addClass("dropped");
     }
     else {
       $(".header, .header__logo, .header__title, .header__nav, .header__nav_burger").removeClass("scroll");
+      $(".langToggle").removeClass("dropped");
     } 
   });
 
@@ -84,14 +86,16 @@ const headerWithScroll = () => {
       console.log('click');
       //lock/unlock body
       $("body").toggleClass("lock"); 
+
       if ($(window).scrollTop() < 1) {
         $(".header, .header__logo, .header__title, .header__nav, .header__nav_burger").toggleClass("scroll");
-        $(".header__nav_burger, .header__nav, .header__list, .header__item").toggleClass("dropped");
+        $(".header__nav_burger, .header__nav, .header__list, .header__item, .langToggle").toggleClass("dropped");
         $(".header__item").click(function (event) {
-          $(".header__nav_burger, .header__nav, .header__list, .header__item").removeClass("dropped");
+          $(".header__nav_burger, .header__nav, .header__list, .header__item, .langToggle").removeClass("dropped");
           $("body").removeClass("lock");
           scrollingBurger(event.target)
         });
+
       } else {
         $(".header__nav_burger, .header__nav, .header__list, .header__item").toggleClass("dropped");
         $(".header__item").click(function (event) {

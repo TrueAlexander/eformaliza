@@ -1,24 +1,24 @@
 .ask#ask
   .container
-    p.ask__title.title SOLICITE UMA CONVERSA SEM COMPROMISSO:
+    p.ask__title.title SOLICITe UNA consultación SIN COMPROMISO:
     .ask__box
       .ask__image
         img(src=require("../../../images/student_asking_question.svg"), alt="ask") 
       form.ask__form.form(action="https://formsubmit.co/contato@eformaliza.com" method="POST")
         .form__label
-          label(for="name") Seu nome
+          label(for="name") Su nombre
         .form__input 
-          input(type="text" placeholder="nome" name="name" required)
+          input(type="text" placeholder="nombre" name="name" required)
         .form__label
-          label(for="name") Seu telefone
+          label(for="name") Su teléfono
         .form__input
-          input(type="phone" placeholder="telefone" name="phone" required)
+          input(type="phone" placeholder="teléfono" name="phone" required)
         .form__label
-          label(for="email") Seu email
+          label(for="email") Su email
         .form__input
           input(type="email" placeholder="email" name="email" required)
         input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
-        input(type="hidden" name="_next" value="https://eformaliza.com/emailSent.html")
+        input(type="hidden" name="_next" value="https://eformaliza.com/emailSentEsp.html")
         input(type="hidden" name="_template" value="table")
         input(type="hidden" name="_captcha" value="false")
         button.form__btn.btn(type="submit") Solicitar!  

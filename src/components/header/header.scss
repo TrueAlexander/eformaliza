@@ -8,8 +8,6 @@
   text-align: center;
   z-index: 300;
 
- 
-
   img.logo {
    
     transition: all 0.8s linear 0.05s;
@@ -17,7 +15,7 @@
     display: block;
     height: 180px;
     padding: 0 0 15px;
-    z-index: 151;
+    z-index: 500;
     position: relative;
    
     
@@ -86,6 +84,8 @@
     transition: all 0.8s linear 0.05s;
     top: 20px;
     right: 6%;
+    z-index: 10000;
+   
 
     .burger__inner {
       background-color: white;
@@ -95,6 +95,7 @@
       transform: translateY(-50%);
       box-shadow: 0 0 2px white, 0 0 3px red;
       transition: all 0.8s linear 0.05s;
+      z-index: 10000;
     }
   }
 
@@ -102,6 +103,7 @@
   &__nav_burger::after {
     content: "";
     display: block;
+    z-index: 10000;
     height: 4px;
     width: 100%;
     background-color: white;
@@ -191,14 +193,20 @@
 @media (max-width: 700px) {
   .header {
     img.logo {
-      height: 90px;
+      height: 95px;
       opacity: 1;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: none;
       
     }
 
     &__nav_burger {
       display: block;
-      
+      z-index: 600;
+      position: absolute;
+    
     }
 
     &__nav_burger.dropped {
@@ -292,11 +300,32 @@
       top: 20px;
       transition: all 0.8s linear 0.05s;
     }
-
+    
     img.logo.scroll {
-      height: 80px;
-      opacity: 1;
+      
+     
+      transition: none;
+      animation-duration: 1s;
+      animation-name: appearLogo;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+
+      height: 75px;
+      padding: 0 0 7px;
+      opacity: 0;
+      position: relative;
+      left: 30px;
       
     }
+  }
+}
+
+@keyframes appearLogo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
