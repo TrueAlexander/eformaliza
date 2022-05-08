@@ -5,7 +5,7 @@
   position: absolute;
   right: 0;
   top: 10px;
-  z-index: 1000;
+  z-index: 900;
   width: fit-content;
   
 
@@ -22,7 +22,7 @@
   &__item {
     margin-left: 50px;
     position: relative;
-    z-index: 900;
+    z-index: 950;
   }
 
   &__btn {
@@ -70,7 +70,7 @@
   &__row {
     flex-direction: column;
     width: fit-content;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 35px;
   }
 
     &__item {
