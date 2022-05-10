@@ -7,9 +7,10 @@ import portfolio from './components/portfolio/portfolio'
 import langToggle from './components/langToggle/langToggle'
 import offers from './components/offers/offers'
 import antiFouc from './antiFouc'
+import yall from 'yall-js'
 
 
-
+document.addEventListener("DOMContentLoaded", yall);
 headerWithScroll()
 discount()
 portfolio()
