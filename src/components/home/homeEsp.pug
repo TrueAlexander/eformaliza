@@ -6,7 +6,9 @@
         p Pensaste e-Formaliza
       .home__row       
         .home__column
-          iframe.home__video(width="853" height="480" src="https://www.youtube.com/embed/p5FUE9UvYbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .home__video
+            .home__play 
+              img(src=require("../../../images/youtube-icon.svg"), alt="play")
         .home__column
           p.home__title Creamos sitios WEB modernos
           ul.home__list
