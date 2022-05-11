@@ -43,7 +43,6 @@
   &__column {
     flex: 0 1 600px;
     height: auto;
-    // overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;  
@@ -101,7 +100,6 @@
 
   &__play {
     width: 80px;
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,7 +110,7 @@
       width: 100%;
       height: 60px;
       display: block;
-      background-color: rgba(255, 255, 255, 0.55);
+      background-color: rgba(255, 255, 255);
       background-size: contain;
     }
    
