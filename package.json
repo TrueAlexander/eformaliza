@@ -39,6 +39,7 @@
   "dependencies": {
     "jquery": "^3.6.0",
     "seamless-scroll-polyfill": "^2.1.8",
-    "swiper": "^7.3.0"
+    "swiper": "^7.3.0",
+    "yall-js": "^3.2.0"
   }
 }
