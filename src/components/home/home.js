@@ -9,6 +9,7 @@ const home = () => {
 
     video.addEventListener('click', () => {
       video.innerHTML = ''
+      video.classList.remove('hovered')
 
       const videos = [
         {
