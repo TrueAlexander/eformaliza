@@ -1,7 +1,7 @@
 const discount = () => {
 
   const timerBlock = document.querySelector('.timer__time')
-  const deadLine = '31 may 2022'
+  const deadLine = '31 july 2022'
   let interval
   
   const updateClock = () => {
