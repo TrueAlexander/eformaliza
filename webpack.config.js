@@ -56,11 +56,11 @@ module.exports = {
     //   template: 'src/faq.pug',
     //   favicon: 'src/favicon.ico',
     // }),
-    // new HtmlWebpackPlugin({
-    //   filename: 'blog.html',
-    //   template: 'src/blog.pug',
-    //   favicon: 'src/favicon.ico',
-    // })
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
+      template: 'src/blog.pug',
+      favicon: 'src/favicon.ico',
+    })
   ],
   devServer: {
     static: './src/index.pug',

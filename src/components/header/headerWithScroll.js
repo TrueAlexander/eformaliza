@@ -2,7 +2,8 @@ import { elementScrollIntoView, windowScroll } from "seamless-scroll-polyfill";
 import $ from 'jquery';
 
 const headerWithScroll = () => {
- 
+
+  
   const scrolling = () => {
     const contactLink = document.querySelector('#toContacts')
     const promotionLink = document.getElementById('toPromotion')
@@ -17,27 +18,32 @@ const headerWithScroll = () => {
     const allLinks = []
 
     allLinks.push(contactLink, discountLink, promotionLink, promotionBtn, creationLink, creationBtn,homeLink)
+    
+    console.log(window.location.href.slice(22));
 
-    allLinks.forEach((link) => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault()
-
-        const id = link.getAttribute('href').substring(1)
-        const target = document.getElementById(id)
-
-        if (event.target === homeLink) {
-
-          if (header.classList.contains('scroll')) {
+    if (window.location.href.slice(22) !== 'blog.html') {
+      allLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault()
+  
+          const id = link.getAttribute('href').substring(1)
+          const target = document.getElementById(id)
+  
+          if (event.target === homeLink) {
+  
+            if (header.classList.contains('scroll')) {
+              elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
+              console.log('scrolled');
+            } 
+  
+          } else {
             elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
             console.log('scrolled');
-          } 
-
-        } else {
-          elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
-          console.log('scrolled');
-        }
-      }) 
-    })   
+          }
+        }) 
+      })  
+    } 
+     
   }
 
   const scrollingBurger = (clickedLink) => {

@@ -9,14 +9,20 @@ import langToggle from './components/langToggle/langToggle'
 import offers from './components/offers/offers'
 import antiFouc from './antiFouc'
 import yall from 'yall-js'
+import headerBlog from './components/headerBlog/headerBlog'
 
+ 
 
 document.addEventListener("DOMContentLoaded", yall);
 headerWithScroll()
+headerBlog()
+antiFouc()
 home()
 discount()
 portfolio()
 // ask()
 offers()
 langToggle()
-antiFouc()
+
+
+

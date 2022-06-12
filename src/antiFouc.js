@@ -7,7 +7,13 @@ const antiFouc = () => {
 
   domReady(() => {
     //Display body when DOM is loaded
+    console.log('ok')
     document.body.style.visibility = 'visible'
+    ///
+    console.log('ok')
+    document.body.classList.remove('preload')
+    console.log('ok')
+
   })
 }
 
