@@ -14,7 +14,7 @@
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
-    height: 180px;
+    height: 150px;
     padding: 0 0 15px;
     z-index: 500;
     position: relative;
@@ -27,9 +27,10 @@
   }
 
   &__title {
+    
     text-align: center;
-    line-height: 1.3em;
-    font-size: 3em;
+    transition: all 0.8s linear 0.05s;
+    font-size: 2.8em;
     font-weight: 600;
     letter-spacing: 0.1em;
   
@@ -37,15 +38,14 @@
 
   &__nav {
     z-index: 150;
-    margin: auto;
     transform: translateY(70px);
     transition: all 0.8s linear 0.05s;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 0.7em;
     font-family: $font-family-subtitle, sans-serif;
 
     .title {
-      font-size: 50px;
+      font-size: 50px;    
     }
   }
 
@@ -156,6 +156,13 @@
   &__nav {
     transition: all 0.8s linear 0.05s;
     transform: translateY(18px);
+    
+  }
+
+  &__title {
+    padding-top: 5px;
+    font-size: 40px;
+    transition: all 0.8s linear 0.05s;
   }
 
   &__nav::before {

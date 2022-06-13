@@ -19,9 +19,9 @@ const headerWithScroll = () => {
 
     allLinks.push(contactLink, discountLink, promotionLink, promotionBtn, creationLink, creationBtn,homeLink)
     
-    console.log(window.location.href.slice(22));
+    
 
-    if (window.location.href.slice(22) !== 'blog.html') {
+    if (!window.location.href.includes('blog.html')) {
       allLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault()
