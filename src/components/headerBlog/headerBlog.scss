@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 
 .headerBlog {
+  background-color: rgba(95, 94, 94, 0.359);
   transition: all 0.8s linear 0.05s;
   display: block;
   position: fixed;
@@ -8,6 +9,7 @@
   text-align: center;
   z-index: 300;
   color: #fff;
+ 
 
   img.logo {
    
@@ -33,6 +35,8 @@
     font-size: 2.8em;
     font-weight: 600;
     letter-spacing: 0.1em;
+    position: relative;
+    left: -60px;
   
   }
 
