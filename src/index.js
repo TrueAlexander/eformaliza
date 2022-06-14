@@ -7,22 +7,29 @@ import portfolio from './components/portfolio/portfolio'
 // import ask from './components/ask/ask'
 import langToggle from './components/langToggle/langToggle'
 import offers from './components/offers/offers'
+import blogSection from './components/blogSection/blogSection'
 import antiFouc from './antiFouc'
 import yall from 'yall-js'
 import headerBlog from './components/headerBlog/headerBlog'
 
- 
 
-document.addEventListener("DOMContentLoaded", yall);
-headerWithScroll()
-headerBlog()
-antiFouc()
-home()
-discount()
-portfolio()
-// ask()
-offers()
-langToggle()
+
+if (!window.location.href.includes('blog.html')) {
+  
+  document.addEventListener("DOMContentLoaded", yall)
+  antiFouc()
+  headerWithScroll()
+  home()
+  discount()
+  portfolio()
+  offers()
+  langToggle()
+} else {
+  
+  headerBlog()
+  blogSection()
+  antiFouc()
+}
 
 
 

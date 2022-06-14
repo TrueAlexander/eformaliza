@@ -1,7 +1,8 @@
 @import "../../styles/variables";
 
 .headerBlog {
-  background-color: rgba(95, 94, 94, 0.359);
+  // background-color: rgba(95, 94, 94, 0.359);
+  background-color: black;
   transition: all 0.8s linear 0.05s;
   display: block;
   position: fixed;
@@ -144,7 +145,8 @@
 }
 
 .scroll.headerBlog {
-  background-color: rgba(53, 53, 53, 0.95);
+  // background-color: rgba(53, 53, 53, 0.95);
+  background-color: rgba(0, 0, 0, 0.612);
   transition: all 0.8s linear 0.05s;
   position: fixed;
   width: 100%;

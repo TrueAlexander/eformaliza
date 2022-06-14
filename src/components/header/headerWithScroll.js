@@ -1,4 +1,4 @@
-import { elementScrollIntoView, windowScroll } from "seamless-scroll-polyfill";
+import { elementScrollIntoView } from "seamless-scroll-polyfill";
 import $ from 'jquery';
 
 const headerWithScroll = () => {
