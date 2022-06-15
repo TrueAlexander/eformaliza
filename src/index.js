@@ -25,7 +25,7 @@ if (!window.location.href.includes('blog.html')) {
   offers()
   langToggle()
 } else {
-  
+  document.addEventListener("DOMContentLoaded", yall)
   headerBlog()
   blogSection()
   
