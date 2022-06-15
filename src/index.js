@@ -17,7 +17,7 @@ import headerBlog from './components/headerBlog/headerBlog'
 if (!window.location.href.includes('blog.html')) {
   
   document.addEventListener("DOMContentLoaded", yall)
-  antiFouc()
+  
   headerWithScroll()
   home()
   discount()
@@ -28,8 +28,8 @@ if (!window.location.href.includes('blog.html')) {
   
   headerBlog()
   blogSection()
-  antiFouc()
+  
 }
-
+antiFouc()
 
 

@@ -18,15 +18,11 @@ const blogSection = () => {
     allLinks.forEach((link) => {
       link.addEventListener('click', (event) => {
         event.preventDefault()
-
         const id = link.getAttribute('href').substring(1)
         const target = document.getElementById(id)
-
         elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
-
       }) 
-    })  
-       
+    })    
   }
   scrolling()
 }
