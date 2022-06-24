@@ -7,6 +7,7 @@
   // background-size: cover;
   // background-repeat: repeat-x;
   border-bottom: 2px solid white;
+  
   text-align: center;
  
   &__box {
@@ -19,9 +20,12 @@
 }
 
 .post {
+
+  border-top: 3px solid white;
+
   &__title {
     .title {
-      margin-top: 0;
+      margin-top: 40px;
     }
   }
 
@@ -130,6 +134,49 @@
         top: -270px;
       }
     }
+
+
+    #anchor1_2 {
+      position: relative;
+      #item1_2 {
+        position: absolute;
+        top: -270px;
+      }
+    }
+    #anchor2_2 {
+      position: relative;
+      #item2_2 {
+        position: absolute;
+        top: -270px;
+      }
+    }
+    #anchor3_2 {
+      position: relative;
+      #item3_2 {
+        position: absolute;
+        top: -270px;
+      }
+    }
+    #anchor4_2 {
+      position: relative;
+      #item4_2 {
+        position: absolute;
+        top: -270px;
+      }
+    }
+
+    #anchorResumo2 {
+      position: relative;
+      #resumo2 {
+        position: absolute;
+        top: -270px;
+      }
+    }
+
+
+
+
+
     #ul {
       margin: 30px 0;
     }
