@@ -15,10 +15,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'animate.css'
 
-
-
 AOS.init()
-
 
 if (!window.location.href.includes('blog.html')) {
   

@@ -1,7 +1,7 @@
 const offers = () => {
   
   const offers = document.querySelectorAll('.offer')
-
+ 
   offers.forEach((offer) => {
     const button = offer.querySelector('.offer__btn')
     const description = offer.querySelector('.offer__description')
