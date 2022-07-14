@@ -1,8 +1,8 @@
 .offers
   .container
-    p.offers__title.title Take advantage of our 2022 special offers
+    p(data-aos="fade-in" data-aos-duration="1800").offers__title.title Take advantage of our 2022 special offers
     .offers__box
-      ul.offers__list
+      ul(data-aos="fade-right" data-aos-duration="1800").offers__list
         li.offers__item.offer
           button.offer__btn(type="button") Bring a friend, get a discount
           .offer__description 
@@ -10,12 +10,12 @@
         li.offers__item.offer
           button.offer__btn(type="button") Free Maintenance
           .offer__description 
-            p Order our development services until May 31st and get 6 months of free maintenance!
+            p Order our development services until September 30th and get 6 months of free maintenance!
         li.offers__item.offer
           button.offer__btn(type="button") Google Business subscribe
           .offer__description 
-            p Order our services until the 31st of July, your company's registration on Google Business will be realized for free!
-      .offers__image
+            p Order our services until the 30th of September, your company's registration on Google Business will be realized for free!
+      div(data-aos="fade-left" data-aos-duration="1800" data-aos-delay="600").offers__image
         img.lazy(src=require("../../../images/placeholder.png"), data-src=require("../../../images/money.png"), alt="promotion")
 
 
