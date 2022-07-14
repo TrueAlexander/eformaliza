@@ -11,7 +11,12 @@ import blogSection from './components/blogSection/blogSection'
 import antiFouc from './antiFouc'
 import yall from 'yall-js'
 import headerBlog from './components/headerBlog/headerBlog'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
+
+
+AOS.init();
 
 
 if (!window.location.href.includes('blog.html')) {
