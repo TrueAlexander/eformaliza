@@ -1,0 +1,3 @@
+# https://www.eformaliza.com/index.html
+User-agent: *
+Disallow:
