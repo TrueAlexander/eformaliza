@@ -107,10 +107,6 @@
       border-radius: 50%;
     }
   }
-
-
-
-
 }
 
 @media (max-width: 1290px) {
@@ -159,40 +155,20 @@
 
     &__box {
       margin-top: 0;
-      // display: flex;
-      // justify-content: space-between;
     }
   
     &__unit {
       height: 50px;
-      // display: flex;
-      // align-items: center; 
     }
   
     &__dove {
       margin-left: 30px;
-      // overflow: hidden;
-      // box-shadow: 0 0 5px white;
-      // border-radius: 50%;
-      // height: 100%;
-      // img {
-      //   height: 100%;
-      // }
     }
   
     &__copyright {
        
       p {
         font-size: 0.9em;
-        // font-family: $font-family-title, Arial, Helvetica, sans-serif;
-        // text-transform: lowercase;
-        // line-height: 30px;
-        // position: relative;
-        // a {
-        //   text-transform: none;
-        //   color: inherit;
-        //   font-size: inherit;
-        // }
       }
   
       p::before {

@@ -27,7 +27,6 @@
 }
 
 .swiper {
-  // max-width: 100%;
   height: auto;
   border-radius: 40px;
   box-shadow: 0 0 35px $colorPrimary;
@@ -38,10 +37,7 @@
 
   &-wrapper {
     
-    // margin: 40px;
-
     .swiper-slide {
-      
       margin: 15px 0 25px;
       height: 350px;
       overflow: hidden;
@@ -57,6 +53,7 @@
         object-fit: contain;
       }
     }
+
     .swiper-slide:hover {
       transition: all 0.3s linear 0.1s;
       transform: scale(1.02);
@@ -64,12 +61,12 @@
     }
   }
 
-  &-pagination {
-    
+  &-pagination { 
     .swiper-pagination-bullet {
       opacity: 1;
       background-color: rgb(255, 255, 255);
     }
+
     .swiper-pagination-bullet-active {
       background-color: rgb(255, 0, 0);
       opacity: 1;
@@ -80,81 +77,20 @@
 @media (max-width: 883px) {
 
   .portfolio {
-
-    // padding: 40px 0;
-    // position: relative;
-    // background-color: $colorBlack;
-   
     .swiper-button-prev,
     .swiper-button-next {
       display: none;
-      // color: rgba(255, 255, 255, 0.7);
-      // top: 57%;
-      // position: absolute;
-      // z-index: 20;
     }
-    // .swiper-button-prev {
-    //   left: 20px;
-    // }
-    // .swiper-button-next {
-    //   right: 20px;
-    // }
-  
-    // .swiper-button-prev:hover,
-    // .swiper-button-next:hover {
-    //   color: red;
-    // }
   }
   
   .swiper {
-    
-    // height: auto;
-    // // border-radius: 40px;
-    // // box-shadow: 0 0 35px $colorPrimary;
-    // margin: 50px auto 0;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   
     &-wrapper {
-      
-      // margin: 40px;
-  
       .swiper-slide {
-        
         margin: 5px 0 20px;
         height: 280px;
-        // overflow: hidden;
-        // border: 7px solid $colorBlack;
-        // border-radius: 40px;
-        // transition: all 0.3s linear 0.1s;
-        // display: flex;
-        // background-color: rgb(167, 167, 167);
-        
-        // img {
-        //   display: block;
-        //   width: 100%;
-        //   object-fit: contain;
-        // }
       }
-      // .swiper-slide:hover {
-      //   transition: all 0.3s linear 0.1s;
-      //   transform: scale(1.02);
-      //   cursor: grabbing;
-      // }
     }
-  
-    // &-pagination {
-      
-    //   .swiper-pagination-bullet {
-    //     opacity: 1;
-    //     background-color: rgb(255, 255, 255);
-    //   }
-    //   .swiper-pagination-bullet-active {
-    //     background-color: rgb(255, 0, 0);
-    //     opacity: 1;
-    //   }
-    // }
   }
 }
 
@@ -163,52 +99,14 @@
   
   .swiper {
     width: 85%;
-    // height: auto;
-    // // border-radius: 40px;
-    // // box-shadow: 0 0 35px $colorPrimary;
-    // margin: 50px auto 0;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-  
+
     &-wrapper {
-      
-      // margin: 40px;
-  
+
       .swiper-slide {
         
         margin: 5px 0 20px;
         height: 250px;
-        // overflow: hidden;
-        // border: 7px solid $colorBlack;
-        // border-radius: 40px;
-        // transition: all 0.3s linear 0.1s;
-        // display: flex;
-        // background-color: rgb(167, 167, 167);
-        
-        // img {
-        //   display: block;
-        //   width: 100%;
-        //   object-fit: contain;
-        // }
       }
-      // .swiper-slide:hover {
-      //   transition: all 0.3s linear 0.1s;
-      //   transform: scale(1.02);
-      //   cursor: grabbing;
-      // }
     }
-  
-    // &-pagination {
-      
-    //   .swiper-pagination-bullet {
-    //     opacity: 1;
-    //     background-color: rgb(255, 255, 255);
-    //   }
-    //   .swiper-pagination-bullet-active {
-    //     background-color: rgb(255, 0, 0);
-    //     opacity: 1;
-    //   }
-    // }
   }
 }

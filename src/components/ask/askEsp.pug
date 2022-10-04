@@ -8,11 +8,11 @@
         .form__label
           label(for="name") Su nombre
         .form__input 
-          input(type="text" placeholder="nombre" name="name" required)
+          input(type="text" minlength="3" placeholder="nombre" name="name" required)
         .form__label
           label(for="name") Su teléfono
         .form__input
-          input(type="phone" placeholder="teléfono" name="phone" required)
+          input(type="number" minlength="7" placeholder="teléfono" name="phone" required)
         .form__label
           label(for="email") Su email
         .form__input

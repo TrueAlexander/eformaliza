@@ -19,12 +19,11 @@
     height: 150px;
     padding: 10px 10px 0 20px;
     z-index: 500;
-    position: relative;
-     
+    position: relative; 
   }
+
   img.headerBlog__logo_scroll {
-    display: none;
-    
+    display: none; 
   }
 
   &__title {
@@ -99,8 +98,7 @@
  @media (max-width: 1160px) {
   .headerBlog {
     img.logo {
-      height: 140px;
-      
+      height: 140px;  
     }
    
   }

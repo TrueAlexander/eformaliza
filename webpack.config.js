@@ -51,11 +51,6 @@ module.exports = {
       template: 'src/eng.pug',
       favicon: 'src/favicon.ico',
     }),
-    // new HtmlWebpackPlugin({
-    //   filename: 'faq.html',
-    //   template: 'src/faq.pug',
-    //   favicon: 'src/favicon.ico',
-    // }),
     new HtmlWebpackPlugin({
       filename: 'blog.html',
       template: 'src/blog.pug',

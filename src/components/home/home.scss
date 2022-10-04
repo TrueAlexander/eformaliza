@@ -116,13 +116,6 @@
    
   }
 
-  // &__video:hover  {
-  //   border: 2px solid rgb(129, 7, 7);
-  //   box-shadow: 0 0 7px rgb(129, 7, 7);
-  //   transform: scale(1.02);
-  //   transition: all 0.3s linear 0.1s;
-  // } 
-
   &__video.hovered:hover  {
     border: 2px solid rgb(129, 7, 7);
     box-shadow: 0 0 7px rgb(129, 7, 7);
@@ -138,7 +131,6 @@
   
     &__greetings {
       font-size: 2.3em;
-
     }
   
     &__row {
