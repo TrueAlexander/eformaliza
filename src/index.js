@@ -6,10 +6,11 @@ import discount from './components/discount/discount'
 import portfolio from './components/portfolio/portfolio'
 import langToggle from './components/langToggle/langToggle'
 import offers from './components/offers/offers'
-import blogSection from './components/blogSection/blogSection'
+// import blogSection from './components/blogSection/blogSection'
+import blogBox from './components/blogBox/blogBox'
 import antiFouc from './antiFouc'
 import yall from 'yall-js'
-import headerBlog from './components/headerBlog/headerBlog'
+import blogHeader from './components/blogHeader/blogHeader'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'animate.css'
@@ -28,10 +29,12 @@ if (!window.location.href.includes('blog.html')) {
   langToggle()
 } else {
   document.addEventListener("DOMContentLoaded", yall)
-  headerBlog()
-  blogSection()
+  blogHeader()
+  blogBox()
+  // blogSection()
   
 }
+
 antiFouc()
 
 

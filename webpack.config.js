@@ -55,6 +55,11 @@ module.exports = {
       filename: 'blog.html',
       template: 'src/blog.pug',
       favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'post.html',
+      template: 'src/post.pug',
+      favicon: 'src/favicon.ico',
     })
   ],
   devServer: {

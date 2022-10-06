@@ -1,7 +1,6 @@
 //components styles
 @use "./generic";
 @use "../components/header/header";
-@use "../components/headerBlog/headerBlog";
 @use "../components/home/home";
 @use "../components/ask/ask";
 @use "../components/discount/discount";
@@ -13,7 +12,10 @@
 @use "../components/footer/footer";
 @use "../components/promotion/promotion";
 @use "../components/creation/creation";
+@use "../components/blogHeader/blogHeader";
 @use "../components/blogSection/blogSection";
+@use "../components/blogBox/blogBox";
+@use "../components/whatsappIcon/whatsappIcon";
 
 //import fonts and variables
 @import "fonts";
