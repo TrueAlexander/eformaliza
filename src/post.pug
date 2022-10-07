@@ -6,9 +6,17 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="description" content="Criação de web sites profissionais" )
     meta(name="keywords" content="criacão, sites, web, page, pagina, emprendedor, empresa, advogados, guarulhos, osasco, salvador, goiania, joinville, curitiba, fortaleza, campinas, sp, porto alegre, df, brasilia, curitiba, bh, criacao")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Criação de web sites profissionais para seu negócio") 
+    meta(property="og:site_name" content="Pensou em sites? Pensou e-Formaliza") 
+    meta(property="og:url" content="https://www.eformaliza.com/") 
+    meta(property="og:description" content="Criacão e manutenção de Websites, páginas online, páginas de promoção, lojas online, e-commerce, desenho, codificação, promoção nas redes sociais. Plataformas Tray, Loja integrada, WordPress") 
+    meta(property="og:image" content="https://i.postimg.cc/RCWvsSxt/logo-principal.jpg")
     script(defer src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver")
-    title Nosso Blog
+    title Post
   body.preload#home(style="visibility: hidden;")
     include components/blogHeader/blogHeader
-    //- include components/blogSection/blogSection
+    include components/blogPost/blogPost
     include components/footer/footer
+    include components/whatsappIcon/whatsappIcon
+    include components/arrowLeft/arrowLeft

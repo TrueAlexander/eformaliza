@@ -13,9 +13,10 @@
 @use "../components/promotion/promotion";
 @use "../components/creation/creation";
 @use "../components/blogHeader/blogHeader";
-@use "../components/blogSection/blogSection";
+@use "../components/blogPost/blogPost";
 @use "../components/blogBox/blogBox";
 @use "../components/whatsappIcon/whatsappIcon";
+@use "../components/arrowLeft/arrowLeft";
 
 //import fonts and variables
 @import "fonts";
