@@ -2,7 +2,6 @@
 
 
 .post {
- 
   margin: 165px 0 50px;
   border-bottom: 2px solid white;
 
@@ -10,6 +9,16 @@
 
   &__box {
     margin: 40px 0;
+    h2 {
+      font-size: 25px;
+      margin: 15px 0;
+      line-height: 30px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 15px 0;
+    }
   }
 
   &__image {
@@ -44,6 +53,10 @@
 
     &__box {
       margin: 40px 0 20px;
+      
+      h2 {
+        font-size: 20px;
+      }
     }
 
     &__text {
