@@ -1,4 +1,5 @@
 import posts from './../../posts'
+import { elementScrollIntoView } from "seamless-scroll-polyfill"
 const placeholder = require("../../../images/placeholder.png")
 
 const blogPost = () => {
@@ -7,7 +8,6 @@ const blogPost = () => {
   const id = localStorage.getItem("id")
   const allPosts = posts()
 
-  console.log(placeholder);
   const postToRender = allPosts[id]
   window.document.title = `${postToRender.title}`
   container.insertAdjacentHTML('beforeend', 
@@ -25,6 +25,13 @@ const blogPost = () => {
       <a class="post__btn btn" href="#home" title="Ir ao inicio">Ao inicio</a>
     </div>
   `)
+
+  const postBtn = document.querySelector('.post__btn')
+
+  postBtn.addEventListener('click', () => {
+    const target = document.getElementById('home')
+    elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
+  })
 }
 
 export default blogPost
