@@ -14,8 +14,9 @@
   }
 
   &__box {
+    padding-top: 20px;
     display: flex;
-    height: 65vh;
+    // height: 65vh;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -39,20 +40,26 @@
   }
 
   .form {
+
     &__label {
       font-size: 0.8em;
       text-align: center;
       font-family: $font-family-subtitle;
       font-weight: 400;
-      line-height: 2em;
+      line-height: 1.5em;
     }
+
     &__input {
-      input {
+      input, textarea {
         width: 60%;
         font-size: 0.7em;
         padding: 5px 7px;
         border-radius: 5px;
         margin-bottom: 10px;
+      }
+      textarea {
+        margin-top: 10px;
+        resize: none;
       }
     }
 
@@ -120,8 +127,9 @@
 
       &__input {
 
-        input {
-          width: 80%;
+        input, textarea {
+          width: 90%;
+          max-width: 350px;
         }
       }
   

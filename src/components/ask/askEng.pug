@@ -10,13 +10,17 @@
         .form__input 
           input(type="text" minlength="3" placeholder="name" name="name" required)
         .form__label
-          label(for="name") You phone
+          label(for="name") Your phone
         .form__input
-          input(type="number" minlength="7" placeholder="phone" name="phone" required)
+          input(type="number" placeholder="number" name="telefone" minlength="9" maxlength="13" required)
         .form__label
           label(for="email") Your email
         .form__input
           input(type="email" placeholder="email" name="email" required)
+        .form__label
+          label(for="pergunta") Your question
+        .form__input
+          textarea(name="pergunta" placeholder="question" required rows="5" cols="33" minlength="10")
         input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
         input(type="hidden" name="_next" value="https://eformaliza.com/emailSentEng.html")
         input(type="hidden" name="_template" value="table")

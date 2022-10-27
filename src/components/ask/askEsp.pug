@@ -12,11 +12,15 @@
         .form__label
           label(for="name") Su teléfono
         .form__input
-          input(type="number" minlength="7" placeholder="teléfono" name="phone" required)
+          input(type="number" placeholder="teléfono" name="telefone" minlength="9" maxlength="13" required)
         .form__label
           label(for="email") Su email
         .form__input
           input(type="email" placeholder="email" name="email" required)
+        .form__label
+          label(for="pregunta") Su pregunta
+        .form__input
+          textarea(name="pregunta" placeholder="su pregunta" required rows="5" cols="33" minlength="10")
         input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
         input(type="hidden" name="_next" value="https://eformaliza.com/emailSentEsp.html")
         input(type="hidden" name="_template" value="table")
