@@ -14,6 +14,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'animate.css'
 import blogPost from './components/blogPost/blogPost'
+import instaFeed from './components/instaFeed/instaFeed'
 
 AOS.init()
 document.addEventListener("DOMContentLoaded", yall)
@@ -30,7 +31,8 @@ if (window.location.href.includes('blog.html')) {
   discount()
   portfolio()
   offers()
-  langToggle()   
+  langToggle()
+  instaFeed()
 }
 
 antiFouc()
