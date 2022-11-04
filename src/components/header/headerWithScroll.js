@@ -81,13 +81,10 @@ const headerWithScroll = () => {
 
   
   if (visualViewport.width > 700) {
-
-    console.log('>700');
     scrolling() 
 
   } else {
 
-    console.log('<700');
     $(".header__nav_burger").click(function () {
       console.log('click');
       //lock/unlock body

@@ -18,10 +18,10 @@ import instaFeed from './components/instaFeed/instaFeed'
 
 AOS.init()
 document.addEventListener("DOMContentLoaded", yall)
-if (window.location.href.includes('blog.html')) {
+if (window.location.href.includes('blog')) {
   blogHeader()
   blogBox()
-} else if (window.location.href.includes('post.html')) {
+} else if (window.location.href.includes('post')) {
   blogHeader()
   blogPost()
 } else {

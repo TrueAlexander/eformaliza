@@ -3,13 +3,14 @@ import { elementScrollIntoView } from "seamless-scroll-polyfill"
 const placeholder = require("../../../images/placeholder.png")
 
 const blogPost = () => {
-  
+
   const container = document.querySelector('.blogPost .container')
   const id = localStorage.getItem("id")
   const allPosts = posts()
 
   const postToRender = allPosts[id]
   window.document.title = `${postToRender.title}`
+  location.hash = postToRender.title
   container.insertAdjacentHTML('beforeend', 
   `
     <div class="post">

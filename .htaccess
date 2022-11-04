@@ -1,3 +1,7 @@
+#the last one that works
 RewriteEngine On
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
 RewriteRule ^index\.html$ https://www.eformaliza.com/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)/?$ $1.html [L]

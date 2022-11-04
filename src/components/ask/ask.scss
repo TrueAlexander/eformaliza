@@ -57,6 +57,12 @@
         border-radius: 5px;
         margin-bottom: 10px;
       }
+
+      input:focus::placeholder, 
+      textarea:focus::placeholder {
+        color: transparent;
+      }
+
       textarea {
         margin-top: 10px;
         resize: none;
@@ -68,8 +74,8 @@
     }
   }
 
-  input[type='number'] {
-    -moz-appearance:textfield;
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
 
   input::-webkit-outer-spin-button,
